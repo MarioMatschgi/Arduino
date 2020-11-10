@@ -1,6 +1,9 @@
 /*
- Name:        _2020_11_05_AudiTurnlight.ino
- Author:    Mario Elsnig
+ * Module for using the uC as a traffic controlling device
+ * 
+ * @author Mario Elsnig
+ * @date LITEC 2020-11-10
+ * @version 1.0
 */
 #include <Arduino.h>
 
