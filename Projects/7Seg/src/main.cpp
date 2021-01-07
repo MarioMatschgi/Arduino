@@ -34,7 +34,6 @@ uint8_t list[10] = {
 // Setup
 void setup()
 {
-  DDRB = 0x00;
   DDRA = 0xFF; // 7 segment display connected
 }
 
@@ -42,7 +41,7 @@ void setup()
 void loop()
 {
   // Iterate trough list to go from 0 to 9
-  for (int i = 0; i < sizeof(list); i++)
+  for (uint8_t i = 0; i < sizeof(list); i++)
   {
     PORTA = list[i];  // Set PORTA to number 0-9
     _delay_ms(DELAY); // Wait for DELAY
