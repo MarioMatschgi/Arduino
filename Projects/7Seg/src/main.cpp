@@ -1,3 +1,11 @@
+/*
+* Module for using the uC to controll a 7-segment-display
+*
+* @author Mario Elsnig
+* @date LITEC 2021-07-01
+* @version 1.0
+*/
+
 #include <Arduino.h>
 
 #pragma region VARIABLES
