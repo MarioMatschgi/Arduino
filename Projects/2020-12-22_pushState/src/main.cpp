@@ -21,17 +21,13 @@ void loop()
   currentButtonState = PINB;
   if (((currentButtonState & 0x80) != oldButtonState) && currentButtonState == LOW)
   {
-
     ledState = (ledState == LOW) ? HIGH : LOW;
 
     if (ledState == HIGH)
-    {
       PORTA = 0xff;
-    }
     else
-    {
       PORTA = 0x00;
-    }
+
     _delay_ms(50);
   }
   oldButtonState = currentButtonState;
