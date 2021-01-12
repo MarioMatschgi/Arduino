@@ -56,10 +56,3 @@ void func(int *param1, /* KEINE KONSTANTE: const */ int *param2)
   *param1 = *param1 + 1;
   *param2 = *param2 + 1;
 }
-
-int main()
-{
-  int p1 = 2;
-  int p2 = 2;
-  func(&p1, &p2);
-}

@@ -7,15 +7,17 @@
 #include <iostream>
 
 
+// MARK: - VARIABLES
 #pragma region VARIABLES
-// MARK: - =VARIABLES
+
+// OLD: int varGlobal = 5;
 
 #pragma endregion
 
 
 
+// MARK: - FUNCTIONS
 #pragma region FUNCTIONS
-// MARK: - =FUNCTIONS
 
 void subGlobalstatic(int varGlobal) {
     static int ivar = 4;
@@ -30,29 +32,41 @@ void subGlobal(int varGlobal) {
     printf("\tivar: %d varGlobal: %d\n", ivar, varGlobal); // first: -1  5 second: -1  5
 }
 
+int multiply(int a, int b) {
+    int result = a * b;
+    printf("\tx * y = %d\n", result);
+    return result;
+}
+
 #pragma endregion
 
 
 
+// MARK: - CALLBACKS
 #pragma region CALLBACKS
-// MARK: - =CALLBACKS
 
 int main() {
-    int varGlobal = 5;
+    int varGlobal1 = 5;
+    int varGlobal2 = 3;
+    int area = 0;
     
-    printf("before: varGlobal: %d\n", varGlobal); // 5
+    printf("before: varGlobal: %d\n", varGlobal1); // 5
     
-    // MARK: subGlobalstatic
-    subGlobalstatic(varGlobal);
-    printf("after1: varGlobal: %d\n", varGlobal); // 5
-    subGlobalstatic(varGlobal);
-    printf("after2: varGlobal: %d\n", varGlobal); // 5
+    // subGlobalstatic
+    subGlobalstatic(varGlobal1);
+    printf("after1: varGlobal1: %d\n", varGlobal1); // 5
+    subGlobalstatic(varGlobal1);
+    printf("after2: varGlobal1: %d\n", varGlobal1); // 5
     
-    // MARK: subGlobal
-    subGlobal(varGlobal);
-    printf("after3: varGlobal: %d\n", varGlobal); // 5
-    subGlobal(varGlobal);
-    printf("after4: varGlobal: %d\n", varGlobal); // 5
+    // subGlobal
+    subGlobal(varGlobal2);
+    printf("after3: varGlobal2: %d\n", varGlobal2); // 5
+    subGlobal(varGlobal2);
+    printf("after4: varGlobal2: %d\n", varGlobal2); // 5
+    
+    // mulGlobal
+    area = multiply(varGlobal1, varGlobal2);
+    printf("area: %d\n", area);
 }
 
 #pragma endregion
