@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "Projects/7Seg"
+	},
+	{
+		"name": "7seg_pushbutton",
+		"path": "Projects/7seg_pushbutton"
+	},
+	{
+		"name": "2020-12-22_pushState",
+		"path": "Projects/2020-12-22_pushState"
+	},
+	{
+		"name": "2020-11.10_singlePushButton",
+		"path": "Projects/2020-11.10_singlePushButton"
+	}
+],
+  "settings": {}
+}
